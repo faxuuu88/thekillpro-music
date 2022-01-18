@@ -1,6 +1,6 @@
 {
   "name": "? ?????????? ?",
-  "description": "Un bot de música de Telegram con funciones adecuadas escritas en Python con Pyrogram y Py-Tgcalls.",
+  "description": "Un bot de mÃºsica de Telegram con funciones adecuadas escritas en Python con Pyrogram y Py-Tgcalls.",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
   "keywords": [
   "python3",
@@ -29,7 +29,7 @@
       "required": true
     },
     "DURATION_LIMIT": {
-      "description": "Límite de duración para la reproducción (en minutos). Ejemplo: 60",
+      "description": "LÃ­mite de duraciÃ³n para la reproducciÃ³n (en minutos). Ejemplo: 60",
       "value": "60",
       "required": true
     },
@@ -49,44 +49,44 @@
       "required": true
     },
     "SUPPORT_CHANNEL": {
-      "description": "Enlace de canal de soporte si tiene alguno, déjelo en blanco si no hay soporte. Su enlace debe comenzar con https://t.me/",
+      "description": "Enlace de canal de soporte si tiene alguno, dÃ©jelo en blanco si no hay soporte. Su enlace debe comenzar con https://t.me/",
       "value": "",
       "required": false
     },
     "SUPPORT_GROUP": {
-      "description": "Enlace de grupo de soporte si tiene alguno, déjelo en blanco si no hay soporte. Su enlace debe comenzar con https://t.me/",
+      "description": "Enlace de grupo de soporte si tiene alguno, dÃ©jelo en blanco si no hay soporte. Su enlace debe comenzar con https://t.me/",
       "value": "",
       "required": false
     },
     "OWNER_ID": {
-      "description": "Si no sabes que es déjalo como esta .",
+      "description": "Si no sabes que es dÃ©jalo como esta .",
       "value": "5005642090",
       "required": true
     },
     "STRING_SESSION1": {
-      "description": "Una sesión de cadena de pirogramas. un asistente es obligatorio.",
+      "description": "Una sesiÃ³n de cadena de pirogramas. un asistente es obligatorio.",
       "value": "",
       "required": true
     },
     "STRING_SESSION2": {
-      "description": "Una sesión de cadena de pirogramas. Déjelo en blanco si no desea Multiasistente",
+      "description": "Una sesiÃ³n de cadena de pirogramas. DÃ©jelo en blanco si no desea Multiasistente",
       "value": "",
       "required": false
     },
     "STRING_SESSION3": {
-      "description": "Una sesión de cadena de pirogramas. Déjelo en blanco si no desea Multiasistente",
+      "description": "Una sesiÃ³n de cadena de pirogramas. DÃ©jelo en blanco si no desea Multiasistente",
       "value": "",
       "required": false
     },
     "STRING_SESSION4": {
-      "description": "Una sesión de cadena de pirogramas. Déjelo en blanco si no desea Multiasistente",
+      "description": "Una sesiÃ³n de cadena de pirogramas. DÃ©jelo en blanco si no desea Multiasistente",
       "value": "",
       "required": false
     },
     "STRING_SESSION5": {
-      "description": "Una sesión de cadena de pirogramas. Déjelo en blanco si no desea Multiasistente",
+      "description": "Una sesiÃ³n de cadena de pirogramas. DÃ©jelo en blanco si no desea Multiasistente",
       "value": "",
-      "required": false
+      "required": false 
     },
     "HEROKU_API_KEY": {
       "description": "La clave API de su cuenta de Heroku",
@@ -94,7 +94,7 @@
       "required": false
     },
     "HEROKU_APP_NAME": {
-      "description": "Tu aplicación heroku/nombre del bot",
+      "description": "Tu aplicaciÃ³n heroku/nombre del bot",
       "value": "",
       "required": false
     },
@@ -104,12 +104,12 @@
       "required": true
     },
     "SUDO_USERS": {
-      "description": "La(s) identificación(es) de usuario(s) de los usuarios a quienes le gustaría agregar como SUDO. Los valores múltiples se deben separar con un espacio.",
+      "description": "La(s) identificaciÃ³n(es) de usuario(s) de los usuarios a quienes le gustarÃ­a agregar como SUDO. Los valores mÃºltiples se deben separar con un espacio.",
       "value": "",
       "required": true
     },
     "UPSTREAM_REPO": {
-      "description": "Si no sabes esto, déjalo como está",
+      "description": "Si no sabes esto, dÃ©jalo como estÃ¡",
       "value": "https://github.com/jefer114430x/thekillpro-music",
       "required": true
     },
