@@ -114,7 +114,7 @@
       "required": true
     },
     "UPSTREAM_BRANCH": {
-      "description": "Repo's Branch Name",
+      "description": "Nombre de la sucursal del repositorio",
       "value": "master",
       "required": true
     }
