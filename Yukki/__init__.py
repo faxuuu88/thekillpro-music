@@ -105,33 +105,33 @@ async def initiate_bot():
     )
     console.print(header)
     with console.status(
-        "[magenta] Yukki Music Bot Booting...",
+        "[magenta] TheKillPro Music bot Iniciando...",
     ) as status:
-        console.print("┌ [red]Booting Up The Clients...\n")
+        console.print("┌ [red]Arrancando los clientes...\n")
         await app.start()
-        console.print("└ [green]Booted Bot Client")
-        console.print("\n┌ [red]Booting Up The Assistant Clients...")
+        console.print("└ [green]Cliente de bot iniciado")
+        console.print("\n┌ [red]Arrancando los clientes asistentes...")
         if STRING1 != "None":
             await ASS_CLI_1.start()
             random_assistant.append(1)
-            console.print("├ [yellow]Booted Assistant Client")
+            console.print("├ [yellow] Asistente 1 Listo")
         if STRING2 != "None":
             await ASS_CLI_2.start()
             random_assistant.append(2)
-            console.print("├ [yellow]Booted Assistant Client 2")
+            console.print("├ [yellow]Asistente 2 listo")
         if STRING3 != "None":
             await ASS_CLI_3.start()
             random_assistant.append(3)
-            console.print("├ [yellow]Booted Assistant Client 3")
+            console.print("├ [yellow]Cliente asistente arrancado 3")
         if STRING4 != "None":
             await ASS_CLI_4.start()
             random_assistant.append(4)
-            console.print("├ [yellow]Booted Assistant Client 4")
+            console.print("├ [yellow]Cliente asistente arrancado 4")
         if STRING5 != "None":
             await ASS_CLI_5.start()
             random_assistant.append(5)
-            console.print("├ [yellow]Booted Assistant Client 5")
-        console.print("└ [green]Assistant Clients Booted Successfully!")
+            console.print("├ [yellow]Asistente de cliente arrancado 5")
+        console.print("└ [green]¡Los clientes asistentes se iniciaron correctamente!")
         if LOG_SESSION != "None":
             console.print("\n┌ [red]Booting Logger Client")
             await LOG_CLIENT.start()
@@ -144,7 +144,7 @@ async def initiate_bot():
             mkdir("cache")
         if "search" not in listdir():
             mkdir("search")
-        console.print("\n┌ [red]Loading Clients Information...")
+        console.print("\n┌ [red]Cargando Información de Clientes...")
         getme = await app.get_me()
         BOT_ID = getme.id
         if getme.last_name:
@@ -207,8 +207,8 @@ async def initiate_bot():
             )
             ASSUSERNAME5 = getme5.username
             ASSMENTION5 = getme5.mention
-        console.print("└ [green]Loaded Clients Information!")
-        console.print("\n┌ [red]Loading Sudo Users...")
+        console.print("└ [green]¡Información de clientes cargados!")
+        console.print("\n┌ [red]Cargando usuarios de Sudo...")
         sudoersdb = db.sudoers
         sudoers = await sudoersdb.find_one({"sudo": "sudo"})
         sudoers = [] if not sudoers else sudoers["sudoers"]

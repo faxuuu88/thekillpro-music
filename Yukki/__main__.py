@@ -33,7 +33,7 @@ HELPABLE = {}
 
 async def initiate_bot():
     with console.status(
-        "[magenta] Finalizing Booting...",
+        "[magenta] Finalizando el arranque...",
     ) as status:
         try:
             chats = await get_active_video_chats()
@@ -82,23 +82,23 @@ async def initiate_bot():
             status="[bold blue]Importation Completed!",
         )
     console.print(
-        "[bold green]Congrats!! Yukki Music Bot has started successfully!\n"
+        "[bold green]¡¡Felicitaciones!! ¡Thekillpro Music Bot se ha iniciado con éxito!\an"
     )
     try:
         await app.send_message(
             LOG_GROUP_ID,
-            "<b>Congrats!! Music Bot has started successfully!</b>",
+            "<b>¡¡Felicitaciones!! ¡Music Bot se ha iniciado con éxito!</b>",
         )
     except Exception as e:
         print(
-            "\nBot has failed to access the log Channel. Make sure that you have added your bot to your log channel and promoted as admin!"
+            "\n El bot no pudo acceder al canal de registro. ¡Asegúrese de haber agregado su bot a su canal de registro y promocionado como administrador!"
         )
         console.print(f"\n[red]Stopping Bot")
         return
     a = await app.get_chat_member(LOG_GROUP_ID, BOT_ID)
     if a.status != "administrator":
-        print("Promote Bot as Admin in Logger Channel")
-        console.print(f"\n[red]Stopping Bot")
+        print("Promocionar Bot como administrador en el canal registrador")
+        console.print(f"\n[red]Detener el robot")
         return
     console.print(f"\n┌[red] Bot Started as {BOT_NAME}!")
     console.print(f"├[green] ID :- {BOT_ID}!")
@@ -106,36 +106,34 @@ async def initiate_bot():
         try:
             await ASS_CLI_1.send_message(
                 LOG_GROUP_ID,
-                "<b>Congrats!! Assistant Client 1  has started successfully!</b>",
+                "¡<b>¡Felicitaciones! ¡El Cliente Asistente 1 se ha iniciado correctamente!</b>",
             )
         except Exception as e:
             print(
-                "\nAssistant Account 1 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!"
+                "\nLa cuenta de asistente 1 no pudo acceder al canal de registro. ¡Asegúrese de haber agregado su asistente a su canal de registro y promocionado como administrador!"
             )
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_1.join_chat("OfficialYukki")
-            await ASS_CLI_1.join_chat("YukkiSupport")
+            await ASS_CLI_1.join_chat("Thekillpro30_channel")
         except:
             pass
-        console.print(f"├[red] Assistant 1 Started as {ASSNAME1}!")
+        console.print(f"├[red] ¡El asistente 1 comenzó como {ASSNAME1}!")
         console.print(f"├[green] ID :- {ASSID1}!")
     if STRING2 != "None":
         try:
             await ASS_CLI_2.send_message(
                 LOG_GROUP_ID,
-                "<b>Congrats!! Assistant Client 2 has started successfully!</b>",
+                "<b>¡Felicitaciones! ¡Asistent Client 2 se ha iniciado correctamente!</b>",
             )
         except Exception as e:
             print(
-                "\nAssistant Account 2 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!"
+                "\nLa cuenta de asistente 2 no pudo acceder al canal de registro. ¡Asegúrese de haber agregado su asistente a su canal de registro y promocionado como administrador!"
             )
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_2.join_chat("OfficialYukki")
-            await ASS_CLI_2.join_chat("YukkiSupport")
+            await ASS_CLI_2.join_chat("Thekillpro30_channel")
         except:
             pass
         console.print(f"├[red] Assistant 2 Started as {ASSNAME2}!")
@@ -144,17 +142,16 @@ async def initiate_bot():
         try:
             await ASS_CLI_3.send_message(
                 LOG_GROUP_ID,
-                "<b>Congrats!! Assistant Client 3 has started successfully!</b>",
+                "¡<b>¡Felicitaciones! ¡Asistent Client 3 se ha iniciado correctamente!</b>",
             )
         except Exception as e:
             print(
-                "\nAssistant Account 3 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!"
+                "\nLa cuenta de asistente 3 no pudo acceder al canal de registro. ¡Asegúrese de haber agregado su asistente a su canal de registro y promocionado como administrador!" "\nCuenta del asistente            
             )
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_3.join_chat("OfficialYukki")
-            await ASS_CLI_3.join_chat("YukkiSupport")
+            await ASS_CLI_3.join_chat("Thekillpro30_channel")
         except:
             pass
         console.print(f"├[red] Assistant 3 Started as {ASSNAME3}!")
@@ -163,17 +160,16 @@ async def initiate_bot():
         try:
             await ASS_CLI_4.send_message(
                 LOG_GROUP_ID,
-                "<b>Congrats!! Assistant Client 4 has started successfully!</b>",
+                "¡<b>¡Felicitaciones! ¡Asistent Client 4 se ha iniciado correctamente!</b>",
             )
         except Exception as e:
             print(
-                "\nAssistant Account 4 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!"
+                "\nLa cuenta de asistente 4 no pudo acceder al canal de registro. ¡Asegúrese de haber agregado su asistente a su canal de registro y promocionado como administrador!"
             )
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_4.join_chat("OfficialYukki")
-            await ASS_CLI_4.join_chat("YukkiSupport")
+            await ASS_CLI_4.join_chat("Thekillpro30_channel")
         except:
             pass
         console.print(f"├[red] Assistant 4 Started as {ASSNAME4}!")
@@ -182,17 +178,16 @@ async def initiate_bot():
         try:
             await ASS_CLI_5.send_message(
                 LOG_GROUP_ID,
-                "<b>Congrats!! Assistant Client 5 has started successfully!</b>",
+                "¡<b>¡Felicitaciones! ¡Asistent Client 5 se ha iniciado correctamente!</b>",
             )
         except Exception as e:
             print(
-                "\nAssistant Account 5 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!"
+                "\nLa cuenta de asistente 5 no pudo acceder al canal de registro. ¡Asegúrese de haber agregado su asistente a su canal de registro y promocionado como administrador!"
             )
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_5.join_chat("OfficialYukki")
-            await ASS_CLI_5.join_chat("YukkiSupport")
+            await ASS_CLI_5.join_chat("Thekillpro30_channel")
         except:
             pass
         console.print(f"├[red] Assistant 5 Started as {ASSNAME5}!")
@@ -201,20 +196,19 @@ async def initiate_bot():
         try:
             await LOG_CLIENT.send_message(
                 LOG_GROUP_ID,
-                "<b>Congrats!! Logger Client has started successfully!</b>",
+                "¡<b>¡Felicitaciones! ¡Logger Client se ha iniciado correctamente!</b>",
             )
         except Exception as e:
             print(
-                "\nLogger Client has failed to access the log Channel. Make sure that you have added your Logger Account to your log channel and promoted as admin!"
+                "\nLogger Client no pudo acceder al canal de registro. ¡Asegúrese de haber agregado su cuenta de registrador a su canal de registro y promocionado como administrador!"
             )
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await LOG_CLIENT.join_chat("OfficialYukki")
-            await LOG_CLIENT.join_chat("YukkiSupport")
+            await LOG_CLIENT.join_chat("Thekillpro30_channel")
         except:
             pass
-    console.print(f"└[red] Yukki Music Bot Boot Completed.")
+    console.print(f"└[red] Arranque de TheKillPro Music Bot completado.")
     if STRING1 != "None":
         await pytgcalls1.start()
     if STRING2 != "None":
@@ -230,10 +224,10 @@ async def initiate_bot():
 
 
 home_text_pm = f"""Hello ,
-My name is {BOT_NAME}.
-A Telegram Music+Video Streaming bot with some useful features.
+Mi nombre es {BOT_NAME}.
+Un bot de Telegram Music+Video Streaming con algunas características útiles.
 
-All commands can be used with: / """
+Todos los comandos se pueden usar con: / ""
 
 
 @app.on_message(filters.command("help") & filters.private)
@@ -373,11 +367,11 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """Hello {first_name},
+        """Hola {first_name},
 
-Click on the buttons for more information.
+Haga clic en los botones para obtener más información.
 
-All commands can be used with: /
+Todos los comandos se pueden usar con: /
 """.format(
             first_name=name
         ),
@@ -401,9 +395,9 @@ async def help_button(client, query):
     create_match = re.match(r"help_create", query.data)
     top_text = f"""Hello {query.from_user.first_name},
 
-Click on the buttons for more information.
+Haga clic en los botones para obtener más información.
 
-All commands can be used with: /
+Todos los comandos se pueden usar con: /
  """
     if mod_match:
         module = mod_match.group(1)
